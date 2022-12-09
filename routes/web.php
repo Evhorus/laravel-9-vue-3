@@ -33,7 +33,7 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::resource('books', BookController::class);
-Route::resource('dependences', DependenceController::class);
+Route::resource('/pqrs/dependences', DependenceController::class );
 
 // Route::resource('pqrs/dependences', PqrsDependenceController::class);
                                     // PqrsDependenceController

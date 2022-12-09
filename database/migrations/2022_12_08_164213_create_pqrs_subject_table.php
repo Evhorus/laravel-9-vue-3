@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('pqrs_subject', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_dependence')->references('id')->on('pqrs_dependence')->onDelete('cascade');
+            $table->foreignId('id_dependence')->references('id')->on('dependences')->onDelete('cascade');
             $table->string('name', 500);
             $table->timestamps();
         });
